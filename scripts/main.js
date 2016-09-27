@@ -6,9 +6,12 @@ window.jQuery = $;
 
 var AppComponent = require('./components/AppComponent');
 var JobTipsComponent = require('./components/JobTipsComponent');
+var JobFormComponent = require('./components/JobFormComponent');
 
 
 ReactDOM.render(
-	<JobTipsComponent />,
+	<AppComponent />,
 	document.getElementById('app')
-	)
+	);
+
+

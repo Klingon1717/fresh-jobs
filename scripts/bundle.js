@@ -30965,6 +30965,7 @@ module.exports = require('./lib/React');
 
 var React = require('react');
 var JobTipsComponent = require('./JobTipsComponent.js');
+var JobFormComponent = require('./JobFormComponent.js');
 
 module.exports = React.createClass({
 	displayName: 'exports',
@@ -30973,12 +30974,85 @@ module.exports = React.createClass({
 		return React.createElement(
 			'div',
 			null,
-			React.createElement(JobTipsComponent, null)
+			React.createElement(JobTipsComponent, null),
+			',',
+			React.createElement(JobFormComponent, null)
 		);
 	}
 });
 
-},{"./JobTipsComponent.js":174,"react":172}],174:[function(require,module,exports){
+},{"./JobFormComponent.js":174,"./JobTipsComponent.js":175,"react":172}],174:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+
+module.exports = React.createClass({
+	displayName: "exports",
+
+	render: function render() {
+		return React.createElement(
+			"div",
+			null,
+			React.createElement(
+				"h1",
+				null,
+				"Post your job"
+			),
+			React.createElement(
+				"h3",
+				null,
+				React.createElement(
+					"strong",
+					null,
+					"Title"
+				)
+			),
+			React.createElement("input", { type: "text" }),
+			React.createElement(
+				"h3",
+				null,
+				React.createElement(
+					"strong",
+					null,
+					"Company Name"
+				)
+			),
+			React.createElement("input", { type: "text" }),
+			React.createElement(
+				"h3",
+				null,
+				React.createElement(
+					"strong",
+					null,
+					"Location"
+				)
+			),
+			React.createElement("input", { type: "text" }),
+			React.createElement(
+				"h3",
+				null,
+				React.createElement(
+					"strong",
+					null,
+					"Description"
+				)
+			),
+			React.createElement("input", { type: "textarea" }),
+			React.createElement(
+				"h3",
+				null,
+				React.createElement(
+					"strong",
+					null,
+					"Tags"
+				)
+			),
+			React.createElement("input", { type: "text" })
+		);
+	}
+});
+
+},{"react":172}],175:[function(require,module,exports){
 'use strict';
 
 var React = require('react');
@@ -31050,7 +31124,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"react":172}],175:[function(require,module,exports){
+},{"react":172}],176:[function(require,module,exports){
 'use strict';
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -31059,10 +31133,11 @@ window.jQuery = $;
 
 var AppComponent = require('./components/AppComponent');
 var JobTipsComponent = require('./components/JobTipsComponent');
+var JobFormComponent = require('./components/JobFormComponent');
 
-ReactDOM.render(React.createElement(JobTipsComponent, null), document.getElementById('app'));
+ReactDOM.render(React.createElement(AppComponent, null), document.getElementById('app'));
 
-},{"./components/AppComponent":173,"./components/JobTipsComponent":174,"jquery":2,"react":172,"react-dom":3}]},{},[175])
+},{"./components/AppComponent":173,"./components/JobFormComponent":174,"./components/JobTipsComponent":175,"jquery":2,"react":172,"react-dom":3}]},{},[176])
 
 
 //# sourceMappingURL=bundle.js.map
