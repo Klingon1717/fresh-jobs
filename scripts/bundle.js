@@ -30975,11 +30975,11 @@ module.exports = React.createClass({
 		return React.createElement(
 			'div',
 			null,
+			React.createElement(NavigationComponent, null),
+			',',
 			React.createElement(JobTipsComponent, null),
 			',',
-			React.createElement(JobFormComponent, null),
-			',',
-			React.createElement(NavigationComponent, null)
+			React.createElement(JobFormComponent, null)
 		);
 	}
 });
@@ -31145,44 +31145,73 @@ module.exports = React.createClass({
 
 	render: function render() {
 		return React.createElement(
-			"div",
+			"nav",
 			null,
 			React.createElement(
-				"a",
-				{ href: "#", className: "logo" },
+				"div",
+				{ className: "nav-wrapper" },
+				React.createElement("a", { href: "#", className: "logo" }),
+				React.createElement(
+					"li",
+					null,
+					React.createElement(
+						"a",
+						null,
+						"FRES JOBS"
+					)
+				),
 				React.createElement(
 					"div",
-					null,
-					"FRESH JOBS"
-				)
-			),
-			React.createElement(
-				"div",
-				{ className: "links" },
-				React.createElement(
-					"a",
-					{ href: "#list" },
-					"JOBS"
-				),
-				React.createElement(
-					"a",
-					{ href: "#companies" },
-					"COMPANIES"
-				),
-				React.createElement(
-					"a",
-					{ href: "#cities" },
-					"CITIES"
-				),
-				React.createElement(
-					"a",
-					{ href: "#about" },
-					"WHY FRESH?"
-				),
-				React.createElement(
-					"a",
-					{ href: "#add" },
-					"FOR EMPLOYERS"
+					{ className: "links" },
+					React.createElement(
+						"ul",
+						{ className: "nav-mobile", className: "right hide-on-med-and-down" },
+						React.createElement(
+							"li",
+							null,
+							React.createElement(
+								"a",
+								{ href: "#list" },
+								"JOBS"
+							)
+						),
+						React.createElement(
+							"li",
+							null,
+							React.createElement(
+								"a",
+								{ href: "#companies" },
+								"COMPANIES"
+							)
+						),
+						React.createElement(
+							"li",
+							null,
+							React.createElement(
+								"a",
+								{ href: "#cities" },
+								"CITIES"
+							)
+						),
+						React.createElement(
+							"li",
+							null,
+							React.createElement(
+								"a",
+								{ href: "#about" },
+								"WHY FRESH"
+							)
+						),
+						React.createElement(
+							"li",
+							null,
+							React.createElement(
+								"a",
+								{ href: "#add" },
+								"FOR EMPLOYERS"
+							)
+						)
+					)
 				)
 			)
 		);

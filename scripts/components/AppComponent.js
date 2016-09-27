@@ -7,9 +7,9 @@ module.exports = React.createClass({
 	render: function(){
 		return(
 			<div>
+				<NavigationComponent / >,
 				<JobTipsComponent / >,
-				<JobFormComponent / >,
-				<NavigationComponent / >
+				<JobFormComponent / >
 				
 				
 			</div>

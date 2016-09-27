@@ -4,20 +4,24 @@ var React = require('react');
 module.exports=React.createClass({
 	render:function( ) {
 		return(
-			
-				<div>
-					<a href="#" className="logo">
-					<div>FRESH JOBS</div>
-					</a>
+			<nav>
+				
+					<div className="nav-wrapper">
+					<a href="#" className="logo"></a> 
+					<li><a>FRES JOBS</a></li>
+					
 
 					<div className="links">
-					<a href="#list">JOBS</a>
-					<a href="#companies">COMPANIES</a>
-					<a href="#cities">CITIES</a>
-					<a href="#about">WHY FRESH?</a>
-					<a href="#add">FOR EMPLOYERS</a>
-					</div>
+					<ul className="nav-mobile" className="right hide-on-med-and-down">
+					<li><a href="#list">JOBS</a></li>
+					<li><a href="#companies">COMPANIES</a></li>
+					<li><a href="#cities">CITIES</a></li>
+					<li><a href="#about">WHY FRESH</a></li>
+					<li><a href="#add">FOR EMPLOYERS</a></li>
+				</ul>
 				</div>
+				</div>
+			</nav>
 			
 			);
 	}
