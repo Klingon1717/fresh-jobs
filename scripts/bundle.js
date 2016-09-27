@@ -30966,6 +30966,7 @@ module.exports = require('./lib/React');
 var React = require('react');
 var JobTipsComponent = require('./JobTipsComponent.js');
 var JobFormComponent = require('./JobFormComponent.js');
+var NavigationComponent = require('./NavigationComponent.js');
 
 module.exports = React.createClass({
 	displayName: 'exports',
@@ -30976,12 +30977,14 @@ module.exports = React.createClass({
 			null,
 			React.createElement(JobTipsComponent, null),
 			',',
-			React.createElement(JobFormComponent, null)
+			React.createElement(JobFormComponent, null),
+			',',
+			React.createElement(NavigationComponent, null)
 		);
 	}
 });
 
-},{"./JobFormComponent.js":174,"./JobTipsComponent.js":175,"react":172}],174:[function(require,module,exports){
+},{"./JobFormComponent.js":174,"./JobTipsComponent.js":175,"./NavigationComponent.js":176,"react":172}],174:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -30994,137 +30997,199 @@ module.exports = React.createClass({
 			"div",
 			null,
 			React.createElement(
-				"h1",
-				null,
-				"Post your job"
-			),
-			React.createElement(
-				"h3",
-				null,
+				"div",
+				{ className: "form" },
 				React.createElement(
-					"strong",
+					"h3",
 					null,
-					"Title"
-				)
-			),
-			React.createElement("input", { type: "text" }),
-			React.createElement(
-				"h3",
-				null,
+					"Post your job"
+				),
 				React.createElement(
-					"strong",
+					"h5",
 					null,
-					"Company Name"
-				)
-			),
-			React.createElement("input", { type: "text" }),
-			React.createElement(
-				"h3",
-				null,
+					React.createElement(
+						"strong",
+						null,
+						"Title"
+					)
+				),
+				React.createElement("input", { type: "text" }),
 				React.createElement(
-					"strong",
+					"h5",
 					null,
-					"Location"
-				)
-			),
-			React.createElement("input", { type: "text" }),
-			React.createElement(
-				"h3",
-				null,
+					React.createElement(
+						"strong",
+						null,
+						"Company Name"
+					)
+				),
+				React.createElement("input", { type: "text" }),
 				React.createElement(
-					"strong",
+					"h5",
 					null,
-					"Description"
-				)
-			),
-			React.createElement("input", { type: "textarea" }),
-			React.createElement(
-				"h3",
-				null,
+					React.createElement(
+						"strong",
+						null,
+						"Location"
+					)
+				),
+				React.createElement("input", { type: "text" }),
 				React.createElement(
-					"strong",
+					"h5",
 					null,
-					"Tags"
-				)
-			),
-			React.createElement("input", { type: "text" })
+					React.createElement(
+						"strong",
+						null,
+						"Description"
+					)
+				),
+				React.createElement("input", { type: "textarea" }),
+				React.createElement(
+					"h5",
+					null,
+					React.createElement(
+						"strong",
+						null,
+						"Tags"
+					)
+				),
+				React.createElement("input", { type: "text" })
+			)
 		);
 	}
 });
 
 },{"react":172}],175:[function(require,module,exports){
-'use strict';
+"use strict";
 
 var React = require('react');
 
 module.exports = React.createClass({
-	displayName: 'exports',
+	displayName: "exports",
 
 	render: function render() {
 		return React.createElement(
-			'div',
+			"div",
 			null,
 			React.createElement(
-				'h1',
-				null,
-				'Tips for your job posting'
-			),
-			React.createElement('hr', null),
-			React.createElement(
-				'p',
-				null,
+				"div",
+				{ className: "tips" },
 				React.createElement(
-					'strong',
+					"h1",
 					null,
-					'Add Keywords'
+					"Tips for your job posting"
 				),
-				' because the majority of candidates search for available positions using keywords, make sure you use all relevant keywords in your posting.'
-			),
-			React.createElement(
-				'p',
-				null,
+				React.createElement("hr", null),
 				React.createElement(
-					'strong',
+					"p",
 					null,
-					'Use Familiar Job Titles.'
+					React.createElement(
+						"strong",
+						null,
+						"Add Keywords"
+					),
+					" because the majority of candidates search for available positions using keywords, make sure you use all relevant keywords in your posting."
 				),
-				' Use specific but familiar job titles in your postings. Make sure the titles are clear and succint.'
-			),
-			React.createElement(
-				'p',
-				null,
 				React.createElement(
-					'strong',
+					"p",
 					null,
-					'Give Them Details.'
+					React.createElement(
+						"strong",
+						null,
+						"Use Familiar Job Titles."
+					),
+					" Use specific but familiar job titles in your postings. Make sure the titles are clear and succint."
 				),
-				' The purpose of posting a job is to spark a candidates interest in the available position. When a job posting has  detailed descriptions, candidates tend to apply to them more.'
-			),
-			React.createElement(
-				'p',
-				null,
 				React.createElement(
-					'strong',
+					"p",
 					null,
-					'Expand Your Location.'
+					React.createElement(
+						"strong",
+						null,
+						"Give Them Details."
+					),
+					" The purpose of posting a job is to spark a candidates interest in the available position. When a job posting has  detailed descriptions, candidates tend to apply to them more."
 				),
-				' Do not limit your job posting to a restricted area around the job\'s location. Make sure to include surrounding cities and metropolitan areas in your searches'
-			),
-			React.createElement(
-				'p',
-				null,
 				React.createElement(
-					'strong',
+					"p",
 					null,
-					'Discuss Compensation'
+					React.createElement(
+						"strong",
+						null,
+						"Expand Your Location."
+					),
+					" Do not limit your job posting to a restricted area around the job's location. Make sure to include surrounding cities and metropolitan areas in your searches"
 				),
-				' Even though you may not want to give an exact compensation, give a range. Make sure to point out any bonuses, commissions, non-monetary compensation, as well.'
+				React.createElement(
+					"p",
+					null,
+					React.createElement(
+						"strong",
+						null,
+						"Discuss Compensation"
+					),
+					" Even though you may not want to give an exact compensation, give a range. Make sure to point out any bonuses, commissions, non-monetary compensation, as well."
+				)
 			)
 		);
 	}
 });
 
 },{"react":172}],176:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+
+module.exports = React.createClass({
+	displayName: "exports",
+
+	render: function render() {
+		return React.createElement(
+			"div",
+			null,
+			React.createElement(
+				"a",
+				{ href: "#", className: "logo" },
+				React.createElement(
+					"div",
+					null,
+					"FRESH JOBS"
+				)
+			),
+			React.createElement(
+				"div",
+				{ className: "links" },
+				React.createElement(
+					"a",
+					{ href: "#list" },
+					"JOBS"
+				),
+				React.createElement(
+					"a",
+					{ href: "#companies" },
+					"COMPANIES"
+				),
+				React.createElement(
+					"a",
+					{ href: "#cities" },
+					"CITIES"
+				),
+				React.createElement(
+					"a",
+					{ href: "#about" },
+					"WHY FRESH?"
+				),
+				React.createElement(
+					"a",
+					{ href: "#add" },
+					"FOR EMPLOYERS"
+				)
+			)
+		);
+	}
+});
+
+},{"react":172}],177:[function(require,module,exports){
 'use strict';
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -31134,10 +31199,11 @@ window.jQuery = $;
 var AppComponent = require('./components/AppComponent');
 var JobTipsComponent = require('./components/JobTipsComponent');
 var JobFormComponent = require('./components/JobFormComponent');
+var NavigationComponent = require('./components/NavigationComponent');
 
 ReactDOM.render(React.createElement(AppComponent, null), document.getElementById('app'));
 
-},{"./components/AppComponent":173,"./components/JobFormComponent":174,"./components/JobTipsComponent":175,"jquery":2,"react":172,"react-dom":3}]},{},[176])
+},{"./components/AppComponent":173,"./components/JobFormComponent":174,"./components/JobTipsComponent":175,"./components/NavigationComponent":176,"jquery":2,"react":172,"react-dom":3}]},{},[177])
 
 
 //# sourceMappingURL=bundle.js.map

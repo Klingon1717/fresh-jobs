@@ -5,18 +5,20 @@ module.exports=React.createClass({
 	render:function( ) {
 		return(
 			<div>
-				<h1>Post your job</h1>
-				<h3><strong>Title</strong></h3>
+			<div className="form">
+				<h3>Post your job</h3>
+				<h5><strong>Title</strong></h5>
 				<input type="text" />
-				<h3><strong>Company Name</strong></h3>
+				<h5><strong>Company Name</strong></h5>
 				<input type="text" />
-				<h3><strong>Location</strong></h3>
+				<h5><strong>Location</strong></h5>
 				<input type="text" />
-				<h3><strong>Description</strong></h3>
+				<h5><strong>Description</strong></h5>
 				<input type="textarea" />
-				<h3><strong>Tags</strong></h3>
+				<h5><strong>Tags</strong></h5>
 				<input type="text" />
 			</div>
+		</div>
 
 			);
 	}
