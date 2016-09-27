@@ -30995,66 +30995,62 @@ module.exports = React.createClass({
 	render: function render() {
 		return React.createElement(
 			"div",
-			null,
+			{ className: "form" },
 			React.createElement(
-				"div",
-				{ className: "form" },
+				"p",
+				null,
+				"Post your job"
+			),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"h3",
+					"strong",
 					null,
-					"Post your job"
-				),
+					"Title"
+				)
+			),
+			React.createElement("input", { type: "text" }),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"h5",
+					"strong",
 					null,
-					React.createElement(
-						"strong",
-						null,
-						"Title"
-					)
-				),
-				React.createElement("input", { type: "text" }),
+					"Company Name"
+				)
+			),
+			React.createElement("input", { type: "text" }),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"h5",
+					"strong",
 					null,
-					React.createElement(
-						"strong",
-						null,
-						"Company Name"
-					)
-				),
-				React.createElement("input", { type: "text" }),
+					"Location"
+				)
+			),
+			React.createElement("input", { type: "text" }),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"h5",
+					"strong",
 					null,
-					React.createElement(
-						"strong",
-						null,
-						"Location"
-					)
-				),
-				React.createElement("input", { type: "text" }),
+					"Description"
+				)
+			),
+			React.createElement("input", { type: "text" }),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"h5",
+					"strong",
 					null,
-					React.createElement(
-						"strong",
-						null,
-						"Description"
-					)
-				),
-				React.createElement("input", { type: "textarea" }),
-				React.createElement(
-					"h5",
-					null,
-					React.createElement(
-						"strong",
-						null,
-						"Tags"
-					)
-				),
-				React.createElement("input", { type: "text" })
-			)
+					"Tags"
+				)
+			),
+			React.createElement("input", { type: "text" })
 		);
 	}
 });
@@ -31070,66 +31066,61 @@ module.exports = React.createClass({
 	render: function render() {
 		return React.createElement(
 			"div",
-			null,
+			{ className: "tips" },
 			React.createElement(
-				"div",
-				{ className: "tips" },
+				"p",
+				null,
+				"Tips for your job posting"
+			),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"h1",
+					"strong",
 					null,
-					"Tips for your job posting"
+					"Add Keywords"
 				),
-				React.createElement("hr", null),
+				" because the majority of candidates search for available positions using keywords, make sure you use all relevant keywords in your posting."
+			),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"p",
+					"strong",
 					null,
-					React.createElement(
-						"strong",
-						null,
-						"Add Keywords"
-					),
-					" because the majority of candidates search for available positions using keywords, make sure you use all relevant keywords in your posting."
+					"Use Familiar Job Titles."
 				),
+				" Use specific but familiar job titles in your postings. Make sure the titles are clear and succint."
+			),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"p",
+					"strong",
 					null,
-					React.createElement(
-						"strong",
-						null,
-						"Use Familiar Job Titles."
-					),
-					" Use specific but familiar job titles in your postings. Make sure the titles are clear and succint."
+					"Give Them Details."
 				),
+				" The purpose of posting a job is to spark a candidates interest in the available position. When a job posting has  detailed descriptions, candidates tend to apply to them more."
+			),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"p",
+					"strong",
 					null,
-					React.createElement(
-						"strong",
-						null,
-						"Give Them Details."
-					),
-					" The purpose of posting a job is to spark a candidates interest in the available position. When a job posting has  detailed descriptions, candidates tend to apply to them more."
+					"Expand Your Location."
 				),
+				" Do not limit your job posting to a restricted area around the job's location. Make sure to include surrounding cities and metropolitan areas in your searches"
+			),
+			React.createElement(
+				"p",
+				null,
 				React.createElement(
-					"p",
+					"strong",
 					null,
-					React.createElement(
-						"strong",
-						null,
-						"Expand Your Location."
-					),
-					" Do not limit your job posting to a restricted area around the job's location. Make sure to include surrounding cities and metropolitan areas in your searches"
+					"Discuss Compensation"
 				),
-				React.createElement(
-					"p",
-					null,
-					React.createElement(
-						"strong",
-						null,
-						"Discuss Compensation"
-					),
-					" Even though you may not want to give an exact compensation, give a range. Make sure to point out any bonuses, commissions, non-monetary compensation, as well."
-				)
+				" Even though you may not want to give an exact compensation, give a range. Make sure to point out any bonuses, commissions, non-monetary compensation, as well."
 			)
 		);
 	}
@@ -31147,72 +31138,36 @@ module.exports = React.createClass({
 		return React.createElement(
 			"nav",
 			null,
+			React.createElement("a", { href: "#", className: "logo" }),
 			React.createElement(
-				"div",
-				{ className: "nav-wrapper" },
-				React.createElement("a", { href: "#", className: "logo" }),
-				React.createElement(
-					"li",
-					null,
-					React.createElement(
-						"a",
-						null,
-						"FRES JOBS"
-					)
-				),
-				React.createElement(
-					"div",
-					{ className: "links" },
-					React.createElement(
-						"ul",
-						{ className: "nav-mobile", className: "right hide-on-med-and-down" },
-						React.createElement(
-							"li",
-							null,
-							React.createElement(
-								"a",
-								{ href: "#list" },
-								"JOBS"
-							)
-						),
-						React.createElement(
-							"li",
-							null,
-							React.createElement(
-								"a",
-								{ href: "#companies" },
-								"COMPANIES"
-							)
-						),
-						React.createElement(
-							"li",
-							null,
-							React.createElement(
-								"a",
-								{ href: "#cities" },
-								"CITIES"
-							)
-						),
-						React.createElement(
-							"li",
-							null,
-							React.createElement(
-								"a",
-								{ href: "#about" },
-								"WHY FRESH"
-							)
-						),
-						React.createElement(
-							"li",
-							null,
-							React.createElement(
-								"a",
-								{ href: "#add" },
-								"FOR EMPLOYERS"
-							)
-						)
-					)
-				)
+				"a",
+				null,
+				"FRESH JOBS"
+			),
+			React.createElement(
+				"a",
+				{ id: "list", className: "links", href: "#list" },
+				"JOBS"
+			),
+			React.createElement(
+				"a",
+				{ id: "comp", className: "links", href: "#companies" },
+				"COMPANIES"
+			),
+			React.createElement(
+				"a",
+				{ id: "cities", className: "links", href: "#cities" },
+				"CITIES"
+			),
+			React.createElement(
+				"a",
+				{ id: "about", className: "links", href: "#about" },
+				"WHY FRESH"
+			),
+			React.createElement(
+				"a",
+				{ id: "add", className: "links", href: "#add" },
+				"FOR EMPLOYERS"
 			)
 		);
 	}
@@ -31225,14 +31180,14 @@ var ReactDOM = require('react-dom');
 window.$ = require('jquery');
 window.jQuery = $;
 
-var AppComponent = require('./components/AppComponent');
+var AddJobComponent = require('./components/AddJobComponent');
 var JobTipsComponent = require('./components/JobTipsComponent');
 var JobFormComponent = require('./components/JobFormComponent');
 var NavigationComponent = require('./components/NavigationComponent');
 
-ReactDOM.render(React.createElement(AppComponent, null), document.getElementById('app'));
+ReactDOM.render(React.createElement(AddJobComponent, null), document.getElementById('app'));
 
-},{"./components/AppComponent":173,"./components/JobFormComponent":174,"./components/JobTipsComponent":175,"./components/NavigationComponent":176,"jquery":2,"react":172,"react-dom":3}]},{},[177])
+},{"./components/AddJobComponent":173,"./components/JobFormComponent":174,"./components/JobTipsComponent":175,"./components/NavigationComponent":176,"jquery":2,"react":172,"react-dom":3}]},{},[177])
 
 
 //# sourceMappingURL=bundle.js.map

@@ -1,2 +1,25 @@
 body {
   margin: 0 auto; }
+
+nav {
+  padding-right: 250px;
+  padding-left: 50px; }
+  nav .links {
+    float: right; }
+  nav #comp {
+    padding-left: 40px; }
+  nav #about {
+    padding-left: 40px; }
+  nav #cities {
+    padding-left: 40px; }
+  nav #list {
+    padding-left: 40px; }
+
+.tips {
+  text-decoration: none;
+  width: 25%;
+  display: inline-block; }
+
+.form {
+  float: right;
+  width: 65%; }

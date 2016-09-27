@@ -6,21 +6,18 @@ module.exports=React.createClass({
 		return(
 			<nav>
 				
-					<div className="nav-wrapper">
+				
 					<a href="#" className="logo"></a> 
-					<li><a>FRES JOBS</a></li>
+						<a>FRESH JOBS</a>
 					
-
-					<div className="links">
-					<ul className="nav-mobile" className="right hide-on-med-and-down">
-					<li><a href="#list">JOBS</a></li>
-					<li><a href="#companies">COMPANIES</a></li>
-					<li><a href="#cities">CITIES</a></li>
-					<li><a href="#about">WHY FRESH</a></li>
-					<li><a href="#add">FOR EMPLOYERS</a></li>
-				</ul>
-				</div>
-				</div>
+					
+					<a id="list" className="links" href="#list">JOBS</a>
+					<a id="comp" className="links" href="#companies">COMPANIES</a>
+					<a id="cities" className="links" href="#cities">CITIES</a>
+					<a id="about" className="links" href="#about">WHY FRESH</a>
+					<a id="add" className="links" href="#add">FOR EMPLOYERS</a>
+				
+			
 			</nav>
 			
 			);

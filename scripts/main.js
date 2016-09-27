@@ -4,14 +4,14 @@ var ReactDOM = require('react-dom');
 window.$ = require('jquery');
 window.jQuery = $;
 
-var AppComponent = require('./components/AppComponent');
+var AddJobComponent = require('./components/AddJobComponent');
 var JobTipsComponent = require('./components/JobTipsComponent');
 var JobFormComponent = require('./components/JobFormComponent');
 var NavigationComponent = require('./components/NavigationComponent');
 
 
 ReactDOM.render(
-	<AppComponent />,
+	<AddJobComponent />,
 	document.getElementById('app')
 	);
 

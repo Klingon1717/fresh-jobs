@@ -1,3 +1,39 @@
 body{
+
 	margin: 0 auto;
+
+	}
+	nav{
+		padding-right:250px;
+		padding-left:50px;
+
+	.links{
+		float:right;
+
+	}
+	#comp{
+		padding-left:40px;
+	}
+	#about{
+		padding-left:40px;
+	}
+	#cities{
+		padding-left:40px;
+	}
+	#list{
+		padding-left:40px;
+	}
 }
+
+	.tips{
+		text-decoration: none;
+		width:25%;
+		display:inline-block;
+	}
+	
+	.form{
+		float:right;
+		width:65%;
+		
+		
+	}
