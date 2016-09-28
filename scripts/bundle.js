@@ -30979,7 +30979,8 @@ module.exports = React.createClass({
 			',',
 			React.createElement(JobTipsComponent, null),
 			',',
-			React.createElement(JobFormComponent, null)
+			React.createElement(JobFormComponent, null),
+			','
 		);
 	}
 });
@@ -31040,6 +31041,16 @@ module.exports = React.createClass({
 					"Description"
 				),
 				React.createElement("textarea", { className: "materialize-textarea" })
+			),
+			React.createElement(
+				"div",
+				{ className: "input-field col s6" },
+				React.createElement(
+					"label",
+					null,
+					"Tags"
+				),
+				React.createElement("input", { type: "text" })
 			),
 			React.createElement(
 				"button",

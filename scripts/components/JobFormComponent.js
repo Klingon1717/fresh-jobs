@@ -23,6 +23,10 @@ module.exports=React.createClass({
 				<label>Description</label>
 					<textarea className="materialize-textarea"></textarea>
 			</div>
+			<div className="input-field col s6">
+				<label>Tags</label>
+				<input type="text" />
+			</div>
 			<button className="waves-effect waves-light btn">Submit</button>
 					
 					

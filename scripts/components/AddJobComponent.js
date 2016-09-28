@@ -9,7 +9,8 @@ module.exports = React.createClass({
 			<div>
 				<NavigationComponent / >,
 				<JobTipsComponent / >,
-				<JobFormComponent / >
+				<JobFormComponent / >,
+
 				
 				
 			</div>
