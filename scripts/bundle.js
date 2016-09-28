@@ -30967,6 +30967,7 @@ var React = require('react');
 var JobTipsComponent = require('./JobTipsComponent.js');
 var JobFormComponent = require('./JobFormComponent.js');
 var NavigationComponent = require('./NavigationComponent.js');
+var JobDetailsPageComponent = require('./JobDetailsPageComponent.js');
 
 module.exports = React.createClass({
 	displayName: 'exports',
@@ -30980,12 +30981,117 @@ module.exports = React.createClass({
 			React.createElement(JobTipsComponent, null),
 			',',
 			React.createElement(JobFormComponent, null),
-			','
+			',',
+			React.createElement(JobDetailsPageComponent, null)
 		);
 	}
 });
 
-},{"./JobFormComponent.js":174,"./JobTipsComponent.js":175,"./NavigationComponent.js":176,"react":172}],174:[function(require,module,exports){
+},{"./JobDetailsPageComponent.js":177,"./JobFormComponent.js":178,"./JobTipsComponent.js":180,"./NavigationComponent.js":181,"react":172}],174:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+
+module.exports = React.createClass({
+	displayName: "exports",
+
+	render: function render() {
+		return React.createElement("div", { className: "comp-box" });
+	}
+});
+
+},{"react":172}],175:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+
+module.exports = React.createClass({
+	displayName: "exports",
+
+	render: function render() {
+		return React.createElement("div", { className: "filter" });
+	}
+});
+
+},{"react":172}],176:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+
+module.exports = React.createClass({
+	displayName: "exports",
+
+	render: function render() {
+		return React.createElement(
+			"div",
+			{ className: "info" },
+			React.createElement(
+				"p",
+				null,
+				React.createElement(
+					"strong",
+					null,
+					"Looking for a job?"
+				)
+			),
+			React.createElement(
+				"ul",
+				null,
+				"Create a Fresh Jobs profile and let employers come to you.",
+				React.createElement(
+					"li",
+					null,
+					"Employers search our database and contact you"
+				),
+				React.createElement(
+					"li",
+					null,
+					"Import Easily from Linked In"
+				),
+				React.createElement(
+					"li",
+					null,
+					"Link to Stack Overflow, GitHub, CodePlex, and more"
+				)
+			),
+			React.createElement(
+				"button",
+				null,
+				"Create A Profile"
+			)
+		);
+	}
+});
+
+},{"react":172}],177:[function(require,module,exports){
+'use strict';
+
+var React = require('react');
+
+var InfoBoxComponent = require('./InfoBoxComponent.js');
+var CompanyBoxComponent = require('./CompanyBoxComponent.js');
+var FilterBoxComponent = require('./FilterBoxComponent.js');
+var JobRowComponent = require('./JobRowComponent.js');
+
+module.exports = React.createClass({
+	displayName: 'exports',
+
+	render: function render() {
+		return React.createElement(
+			'div',
+			null,
+			React.createElement(InfoBoxComponent, null),
+			',',
+			React.createElement(CompanyBoxComponent, null),
+			',',
+			React.createElement(FilterBoxComponent, null),
+			',',
+			React.createElement(JobRowComponent, null)
+		);
+	}
+});
+
+},{"./CompanyBoxComponent.js":174,"./FilterBoxComponent.js":175,"./InfoBoxComponent.js":176,"./JobRowComponent.js":179,"react":172}],178:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -31061,7 +31167,20 @@ module.exports = React.createClass({
 	}
 });
 
-},{"react":172}],175:[function(require,module,exports){
+},{"react":172}],179:[function(require,module,exports){
+"use strict";
+
+var React = require('react');
+
+module.exports = React.createClass({
+	displayName: "exports",
+
+	render: function render() {
+		return React.createElement("div", { className: "jrow" });
+	}
+});
+
+},{"react":172}],180:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -31132,7 +31251,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"react":172}],176:[function(require,module,exports){
+},{"react":172}],181:[function(require,module,exports){
 "use strict";
 
 var React = require('react');
@@ -31179,7 +31298,7 @@ module.exports = React.createClass({
 	}
 });
 
-},{"react":172}],177:[function(require,module,exports){
+},{"react":172}],182:[function(require,module,exports){
 'use strict';
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -31193,7 +31312,7 @@ var NavigationComponent = require('./components/NavigationComponent');
 
 ReactDOM.render(React.createElement(AddJobComponent, null), document.getElementById('app'));
 
-},{"./components/AddJobComponent":173,"./components/JobFormComponent":174,"./components/JobTipsComponent":175,"./components/NavigationComponent":176,"jquery":2,"react":172,"react-dom":3}]},{},[177])
+},{"./components/AddJobComponent":173,"./components/JobFormComponent":178,"./components/JobTipsComponent":180,"./components/NavigationComponent":181,"jquery":2,"react":172,"react-dom":3}]},{},[182])
 
 
 //# sourceMappingURL=bundle.js.map

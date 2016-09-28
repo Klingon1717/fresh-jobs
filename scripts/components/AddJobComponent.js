@@ -2,6 +2,7 @@ var React = require('react');
 var JobTipsComponent = require('./JobTipsComponent.js');
 var JobFormComponent = require('./JobFormComponent.js');
 var NavigationComponent = require('./NavigationComponent.js');
+var JobDetailsPageComponent = require('./JobDetailsPageComponent.js');
 
 module.exports = React.createClass({
 	render: function(){
@@ -10,6 +11,8 @@ module.exports = React.createClass({
 				<NavigationComponent / >,
 				<JobTipsComponent / >,
 				<JobFormComponent / >,
+				<JobDetailsPageComponent />
+
 
 				
 				
