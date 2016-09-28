@@ -2,10 +2,12 @@ body{
 
 	margin: 0 auto;
 
+
 	}
 	nav{
 		padding-right:250px;
 		padding-left:50px;
+		margin-bottom: 40px;
 
 	.links{
 		float:right;
@@ -27,13 +29,24 @@ body{
 
 	.tips{
 		text-decoration: none;
-		width:25%;
+		width:34%;
 		display:inline-block;
+		padding-left:60px;
+		h5{
+			margin-bottom: 30px;
+		}
 	}
 	
 	.form{
 		float:right;
-		width:65%;
+		width:52%;
+		padding-right:200px;
+		button{
+			float:right;
+		}
+		h4{
+			margin-bottom: 25px;
+		}
 		
 		
 	}

@@ -30997,60 +30997,55 @@ module.exports = React.createClass({
 			"div",
 			{ className: "form" },
 			React.createElement(
-				"p",
+				"h4",
 				null,
 				"Post your job"
 			),
 			React.createElement(
-				"p",
-				null,
+				"div",
+				{ className: "input-field col s6" },
 				React.createElement(
-					"strong",
+					"label",
 					null,
 					"Title"
-				)
+				),
+				React.createElement("input", { type: "text" })
 			),
-			React.createElement("input", { type: "text" }),
 			React.createElement(
-				"p",
-				null,
+				"div",
+				{ className: "input-field col s6" },
 				React.createElement(
-					"strong",
+					"label",
 					null,
 					"Company Name"
-				)
+				),
+				React.createElement("input", { type: "text" })
 			),
-			React.createElement("input", { type: "text" }),
 			React.createElement(
-				"p",
-				null,
+				"div",
+				{ className: "input-field col s6" },
 				React.createElement(
-					"strong",
+					"label",
 					null,
 					"Location"
-				)
+				),
+				React.createElement("input", { type: "text" })
 			),
-			React.createElement("input", { type: "text" }),
 			React.createElement(
-				"p",
-				null,
+				"div",
+				{ className: "input-field col s12" },
 				React.createElement(
-					"strong",
+					"label",
 					null,
 					"Description"
-				)
+				),
+				React.createElement("textarea", { className: "materialize-textarea" })
 			),
-			React.createElement("input", { type: "text" }),
 			React.createElement(
-				"p",
-				null,
-				React.createElement(
-					"strong",
-					null,
-					"Tags"
-				)
-			),
-			React.createElement("input", { type: "text" })
+				"button",
+				{ className: "waves-effect waves-light btn" },
+				"Submit"
+			)
 		);
 	}
 });
@@ -31068,7 +31063,7 @@ module.exports = React.createClass({
 			"div",
 			{ className: "tips" },
 			React.createElement(
-				"p",
+				"h5",
 				null,
 				"Tips for your job posting"
 			),

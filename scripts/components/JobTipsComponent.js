@@ -6,7 +6,7 @@ module.exports=React.createClass({
 		return(
 
 				<div className="tips">
-				<p>Tips for your job posting</p>
+				<h5>Tips for your job posting</h5>
 				<p><strong>Add Keywords</strong> because the majority of candidates search for available positions using keywords, make sure you use all relevant keywords in your posting.</p>
 				<p><strong>Use Familiar Job Titles.</strong> Use specific but familiar job titles in your postings. Make sure the titles are clear and succint.</p>
 				<p><strong>Give Them Details.</strong> The purpose of posting a job is to spark a candidates interest in the available position. When a job posting has  detailed descriptions, candidates tend to apply to them more.</p>
