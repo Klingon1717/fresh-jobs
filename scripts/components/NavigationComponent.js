@@ -3,6 +3,8 @@ var React = require('react');
 
 module.exports=React.createClass({
 	render:function( ) {
+var currentPage = Backbone.history.getFragment();
+		var links = [];	
 		return(
 			<nav>
 				

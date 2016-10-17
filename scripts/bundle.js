@@ -34757,6 +34757,8 @@ module.exports = React.createClass({
 	displayName: "exports",
 
 	render: function render() {
+		var currentPage = Backbone.history.getFragment();
+		var links = [];
 		return React.createElement(
 			"nav",
 			null,
